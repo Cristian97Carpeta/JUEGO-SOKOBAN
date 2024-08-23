@@ -1,4 +1,5 @@
 
+
 import pygame
 from paredes import Pared
 
@@ -9,6 +10,16 @@ VENTANA = pygame.display.set_mode
 
 jugando = True #mientras sea True se estará ejecutando el juego
 pared = Pared (100,100)
+import pygame
+#from paredes import Cubo
+pygame.init()
+
+ANCHO = 1000
+ALTO = 800
+VENTANA = pygame.display.set_mode([ANCHO,ALTO])
+
+jugando = True
+#cubo = Cubo(100,100)
 
 while jugando:
     eventos = pygame.event.get()
@@ -19,7 +30,12 @@ while jugando:
     pared.dibujar(VENTANA)
     pygame.display.update()
 
-quit()
+    jugando = False
+    #cubo.dibujar(VENTANA)
+    pygame.display.flip()
+
+
+pygame.quit()
 
 def is_valid_value(self,char):
         if ( char == ' ' or #piso
