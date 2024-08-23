@@ -1,4 +1,4 @@
-import pygame.draw
+
 import pygame
 
 
@@ -14,3 +14,10 @@ class pared:
 
     def dibujar(self, ventana):
         pygame.draw.rect(ventana, self.color, self.rect)
+
+
+        
+
+        
+        
+
