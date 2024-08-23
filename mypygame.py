@@ -1,5 +1,3 @@
-
-
 import pygame
 
 
@@ -38,9 +36,7 @@ def is_valid_value(self,char):
             char == '.' or #muelle  
             char == '*' or #caja en el muelle
             char == '$' or #caja
-            char == '+' ): #trabajador en el muelle
-            return True
-        else:
-            return False
+            char == '+' ): #trabajador en el 
+                return False
 
 
