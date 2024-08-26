@@ -38,5 +38,8 @@ def is_valid_value(self,char):
             char == '$' or #caja
             char == '+' ): #trabajador en el 
                 return False
+        
+
+nivel_1
 
 
